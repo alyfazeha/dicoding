@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi tentang Gunung Bromo, salah satu gunung berapi terkenal di Indonesia.">
+    <title>Gunung Bromo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Gunung Bromo</h1>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#tourism">Wisata</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <h3>Panduan Bromo</h3>
+            <ul>
+                <li><a href="#history"><i class="fas fa-history"></i> Sejarah</a></li>
+                <li><a href="#location"><i class="fas fa-map-marker-alt"></i> Lokasi</a></li>
+                <li><a href="#activities"><i class="fas fa-hiking"></i> Aktivitas</a></li>
+                <li><a href="#tips"><i class="fas fa-info-circle"></i> Tips Berkunjung</a></li>
+            </ul>
+            <section id="slider">
+                <div class="slider-container">
+                    <div class="slider-images">
+                        <img src="Bromo.jpg" alt="Gunung Bromo 1" class="slider-image">
+                        <img src="Bromo1.jpg" alt="Gunung Bromo 2" class="slider-image">
+                        <img src="Bromo2.jpg" alt="Gunung Bromo 3" class="slider-image">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </section>
+            
+        </aside>
+
+        <article class="content">
+            <section id="home">
+                <h2>Selamat datang di Gunung Bromo</h2>
+                <p>Gunung Bromo adalah salah satu gunung berapi yang paling terkenal di Indonesia. Terletak di Jawa Timur, Gunung Bromo menawarkan pemandangan yang menakjubkan dengan lautan pasir dan kawah yang aktif.</p>
+            </section>
+
+            <section id="about">
+                <h2>Tentang Gunung Bromo</h2>
+                <p>Gunung Bromo adalah bagian dari Taman Nasional Bromo Tengger Semeru. Dikenal dengan kawah yang aktif dan pemandangan matahari terbit yang menakjubkan, Gunung Bromo menjadi destinasi wisata utama di Indonesia.</p>
+            </section>
+
+            <section id="tourism">
+                <h2>Wisata Gunung Bromo</h2>
+                <p>Para wisatawan dapat menikmati berbagai aktivitas di Gunung Bromo, seperti mendaki, menyaksikan matahari terbit, dan menjelajahi kawasan sekitarnya yang indah.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Kontak Kami</h2>
+                <p>Untuk informasi lebih lanjut, hubungi kami di email: info@bromo.com</p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Gunung Bromo | Semua hak cipta dilindungi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
