@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi tentang Kota Wisata Batu, destinasi wisata populer di Jawa Timur, Indonesia.">
+    <title>Kota Wisata Batu</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Kota Wisata Batu</h1> 
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#tourism">Wisata</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <article class="content">
+            <section id="home">
+                <h2>Selamat datang di Kota Wisata Batu</h2>
+                <p>Kota Wisata Batu adalah sebuah kota yang terletak di Jawa Timur, terkenal dengan udara sejuk dan berbagai objek wisata alam yang menarik.</p>
+            </section>
+
+            <section id="about">
+                <h2>Tentang Kota Wisata Batu</h2>
+                <p>Kota Wisata Batu menawarkan keindahan alam, mulai dari kebun apel, air terjun, hingga pemandangan gunung yang memukau. Batu menjadi tujuan wisata keluarga dan petualang yang tak terlupakan.</p>
+            </section>
+
+            <section id="tourism">
+                <h2>Wisata di Kota Batu</h2>
+                <p>Batu memiliki berbagai tempat wisata menarik, seperti Batu Secret Zoo, Jatim Park, dan Air Terjun Coban Rondo. Setiap destinasi memberikan pengalaman unik yang memikat pengunjung.</p>
+                
+                <div class="tourism-gallery">
+                    <img src="wisata1.jpg" alt="Batu Secret Zoo" class="tourism-image">
+                    <img src="wisata2.jpg" alt="Jatim Park" class="tourism-image">
+                    <img src="wisata3.jpg" alt="Air Terjun Coban Rondo" class="tourism-image">
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Kontak Kami</h2>
+                <p>Untuk informasi lebih lanjut, hubungi kami di email: info@wisatabatu.com</p>
+            </section>
+        </article>
+
+        <aside class="sidebar">
+            <h3>Panduan Batu</h3>
+            <ul>
+                <li><a href="#history">Sejarah</a></li>
+                <li><a href="#location">Lokasi</a></li>
+                <li><a href="#activities">Aktivitas</a></li>
+                <li><a href="#tips">Tips Berkunjung</a></li>
+            </ul>
+            <section id="slider">
+                <div class="slider-container">
+                    <div class="slider-images">
+                        <img src="Batu1.jpg" alt="Kota Wisata Batu 1" class="slider-image">
+                        <img src="Batu2.jpg" alt="Kota Wisata Batu 2" class="slider-image">
+                        <img src="Batu3.jpg" alt="Kota Wisata Batu 3" class="slider-image">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kota Wisata Batu | Semua hak cipta dilindungi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
