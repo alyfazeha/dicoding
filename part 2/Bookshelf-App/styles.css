@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f0f9ff; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    font-family: 'Lora', serif; 
+  }
+ 
+  form {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #4b8bf5; 
+    margin-bottom: 20px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #4b8bf5; 
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button {
+    background-color: #4b8bf5;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3578e5; 
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #searchBook {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchBook input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  #searchBook button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #4b8bf5;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  #searchBook button:hover {
+    background-color: #3578e5;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  #incompleteBookList, #completeBookList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  #incompleteBookList div, #completeBookList div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #incompleteBookList div:hover, #completeBookList div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+    color: #4b8bf5; 
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  div button {
+    background-color: #FF6347;
+    color: white;
+    padding: 8px 15px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  div button:hover {
+    background-color: #e0533f;
+  }
+  
+  div button[data-testid="bookItemIsCompleteButton"] {
+    background-color: #4CAF50;
+  }
+  
+  div button[data-testid="bookItemIsCompleteButton"]:hover {
+    background-color: #45a049;
+  }
+  
+  div button[data-testid="bookItemEditButton"] {
+    background-color: #FFA500;
+  }
+  
+  div button[data-testid="bookItemEditButton"]:hover {
+    background-color: #e68919;
+  }
+  
+  div button[data-testid="bookItemDeleteButton"] {
+    background-color: #DC143C;
+  }
+  
+  div button[data-testid="bookItemDeleteButton"]:hover {
+    background-color: #c21828;
+  }
+  
+  #bookForm {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  form input, form button {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 15px;
+    }
+  
+    #incompleteBookList, #completeBookList {
+      grid-template-columns: 1fr;
+    }
+  
+    form input, form button {
+      font-size: 0.9rem;
+    }
+  }
+  
